@@ -19,4 +19,8 @@
     <TypeScriptCompile Include="scripts\app.ts" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\scripts\" />
+  </ItemGroup>
+
 </Project>
