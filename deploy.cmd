@@ -55,7 +55,7 @@ echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 
 :: 0. npm install
 echo Calling npm config
-call npm config --prefix "%DEPLOYMENT_SOURCE%\CorePlusTS"
+call npm config set --prefix "%DEPLOYMENT_SOURCE%\CorePlusTS"
 echo Calling npm install
 call npm install
 IF !ERRORLEVEL! NEQ 0 goto error
