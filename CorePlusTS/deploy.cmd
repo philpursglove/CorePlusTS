@@ -53,6 +53,9 @@ IF NOT DEFINED KUDU_SYNC_CMD (
 
 echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 
+:: 0. npm install
+call npm install "%DEPLOYMENT_SOURCE%\CorePlusTS"
+
 :: 1. Restore, Build and publish
 call :ExecuteCmd "%MSBUILD_16_DIR%\MSBuild.exe" /restore "%DEPLOYMENT_SOURCE%\CorePlusTS\CorePlusTS.csproj" /p:DeployOnBuild=true /p:configuration=Release /p:publishurl="%DEPLOYMENT_TEMP%" %SCM_BUILD_ARGS%
 IF !ERRORLEVEL! NEQ 0 goto error
