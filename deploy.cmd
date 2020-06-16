@@ -54,10 +54,8 @@ IF NOT DEFINED KUDU_SYNC_CMD (
 echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 
 :: 0. npm install
-echo Calling npm config
-call npm config set --prefix "%DEPLOYMENT_SOURCE%\CorePlusTS"
 echo Calling npm install
-call npm install
+call npm install "%DEPLOYMENT_SOURCE%\CorePlusTS"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 1. Restore, Build and publish
