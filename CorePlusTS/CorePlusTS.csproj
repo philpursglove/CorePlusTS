@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove=".deployment" />
+    <None Remove="deploy.cmd" />
     <None Remove="scripts\app.ts" />
   </ItemGroup>
 
