@@ -55,7 +55,7 @@ echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 
 :: 0. npm install
 echo Calling npm install
-call npm install --prefix './CorePlusTS'
+call npm install --prefix CorePlusTS
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 1. Restore, Build and publish
