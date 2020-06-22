@@ -17,4 +17,5 @@ gulp.task('clean', function () {
 
 gulp.task('default', function () {
     gulp.src(paths.scripts).pipe(gulp.dest('wwwroot/scripts'));
+    gulp.src('package.json').pipe(gulp.dest('..'));
 });
