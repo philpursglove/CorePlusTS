@@ -54,6 +54,7 @@ IF NOT DEFINED KUDU_SYNC_CMD (
 echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 
 :: 0. npm install
+:: Redeploy
 echo Calling npm install
 call cd CorePlusTS
 call npm install gulp
