@@ -56,7 +56,7 @@ echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 :: 0. npm install
 echo Calling npm install
 call cd CorePlusTS
-call node -v
+call npm install -g node
 call npm install -g npm@latest
 call npm -v
 call npm install -verbose
