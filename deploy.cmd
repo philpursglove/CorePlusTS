@@ -57,6 +57,7 @@ echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 :: Redeploy
 echo Calling npm install
 call cd CorePlusTS
+call ver
 call npm install gulp
 call npm install del
 call npm install @types/jquery
