@@ -58,9 +58,11 @@ echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 echo Calling npm install
 call cd CorePlusTS
 call ver
-call npm install gulp
-call npm install del
-call npm install @types/jquery
+call node -v | node.txt
+call npm -v | npm.txt
+call type node.txt
+call type npm.txt
+
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 1. Restore, Build and publish
