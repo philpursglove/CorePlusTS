@@ -60,6 +60,7 @@ call cd CorePlusTS
 call ver
 call node -v > node.txt
 call npm -v > npm.txt
+call git --version
 
 IF !ERRORLEVEL! NEQ 0 goto error
 
