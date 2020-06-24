@@ -58,10 +58,8 @@ echo Handling ASP.NET Core Web Application deployment with MSBuild16.
 echo Calling npm install
 call cd CorePlusTS
 call ver
-call node -v | node.txt
-call npm -v | npm.txt
-call type node.txt
-call type npm.txt
+call node -v 
+call npm -v 
 
 IF !ERRORLEVEL! NEQ 0 goto error
 
